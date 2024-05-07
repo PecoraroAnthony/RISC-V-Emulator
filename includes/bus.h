@@ -7,7 +7,7 @@ typedef struct BUS {
     struct DRAM dram;
 } BUS;
 
-uint64_t bus_load(BUS* bus, uint64_t addr, uint64_t size);
-void bus_store(BUS* bus, uint64_t addr, uint64_t size, uint64_t value);
+uint32_t bus_load(BUS* bus, uint32_t addr, uint32_t size);
+void bus_store(BUS* bus, uint32_t addr, uint32_t size, uint32_t value);
 
 #endif
